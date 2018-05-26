@@ -25,7 +25,7 @@ public class YearTest {
         SmartYear smartYear = new SmartYear(2001);
         boolean isLeapYear = smartYear.isLeapYear();
 
-        Assert.assertTrue(isLeapYear);
+        Assert.assertFalse(isLeapYear);
     }
 
     @Test
@@ -41,6 +41,6 @@ public class YearTest {
         SmartYear smartYear = new SmartYear(1900);
         boolean isLeapYear = smartYear.isLeapYear();
 
-        Assert.assertTrue(isLeapYear);
+        Assert.assertFalse(isLeapYear);
     }
 }
