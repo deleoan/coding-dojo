@@ -1,14 +1,16 @@
 package com.oocl.dojo;
 
-class SmartYear {
+public class SmartYear {
 
     private int year;
 
-    SmartYear(int year) {
+    public SmartYear(int year) {
         this.year = year;
     }
 
-    boolean isLeapYear() {
-        return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
+    public boolean isLeapYear() {
+        if((year % 4 == 0) && (year % 100 !=0) || (year % 400 == 0))
+            return true;
+        return false;
     }
 }
